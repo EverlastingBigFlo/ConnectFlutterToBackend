@@ -33,6 +33,18 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
             ),
           ),
+          Positioned(
+            left: 200,
+            bottom: 200,
+            child: Container(
+              width: 460,
+              height: 460,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 193, 210, 220),
+                borderRadius: BorderRadius.circular(250),
+              ),
+            ),
+          ),
         ],
       ),
     );
