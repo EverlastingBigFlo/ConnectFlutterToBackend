@@ -101,15 +101,17 @@ class _WelcomePageState extends State<WelcomePage> {
                       MaterialStateProperty.all<Color>(Colors.black),
                 ),
                 child: const Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Text('JOIN NOW',
+                    padding: EdgeInsets.all(20.0),
+                    child: Text(
+                      'JOIN NOW',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 36,
                         fontWeight: FontWeight.w500,
-                        fontFamily: 'Inder',
-                      )),
-                )))
+                        fontFamily:
+                            'Inder', // Use the font family name declared in pubspec.yaml
+                      ),
+                    ))))
       ]),
     );
   }
