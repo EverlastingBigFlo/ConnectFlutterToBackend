@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:form/components/animations/button.dart';
 import 'package:form/components/animations/first_animation.dart';
-import 'package:form/components/animations/grow.dart';
-import 'package:form/components/animations/let_get.dart';
 import 'package:form/components/animations/second_animation.dart';
-import 'package:form/components/animations/started.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class SignUp extends StatefulWidget {
@@ -23,18 +20,6 @@ class _SignUpState extends State<SignUp> {
         children: [
           Positioned(left: 20, top: -150, child: FirstCircle()),
           Positioned(left: 210, bottom: 310, child: SecondCircle()),
-          Positioned(
-            bottom: 150,
-            left: 60,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                LetGet(),
-                Started(),
-                Grow(),
-              ],
-            ),
-          ),
           Positioned(bottom: 60, left: 90, child: Button()),
         ],
       ),
