@@ -59,6 +59,16 @@ class _WelcomePageState extends State<WelcomePage> {
               child: CircleAvatar(
                 radius: 90,
                 backgroundImage: AssetImage('lib/assets/downimage.png'),
+              )),
+          const Positioned(
+              bottom: 200,
+              left: 10,
+              child: Text(
+                'Let’s Get Started',
+                style: TextStyle(
+                  fontSize: 75,
+                  fontWeight: FontWeight.bold,
+                ),
               ))
         ],
       ),
