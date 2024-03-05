@@ -9,14 +9,14 @@ import 'package:form/components/animations/second_animation.dart';
 import 'package:form/components/animations/started.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
-class WelcomePage extends StatefulWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+class SignUp extends StatefulWidget {
+  const SignUp({Key? key}) : super(key: key);
 
   @override
-  State<WelcomePage> createState() => _WelcomePageState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _WelcomePageState extends State<WelcomePage> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
