@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:form/components/animations/first_animation.dart';
+import 'package:form/components/animations/grow.dart';
 import 'package:form/components/animations/image_one.dart';
 import 'package:form/components/animations/image_two.dart';
 import 'package:form/components/animations/let_get.dart';
@@ -33,13 +34,7 @@ class _WelcomePageState extends State<WelcomePage> {
               children: [
                 LetGet(),
                 Started(),
-                Text(
-                  'Grow Together',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.normal,
-                  ),
-                ),
+                Grow(),
               ],
             ),
           ),
