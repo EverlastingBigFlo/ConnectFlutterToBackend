@@ -4,6 +4,7 @@ import 'package:form/components/animations/image_one.dart';
 import 'package:form/components/animations/image_two.dart';
 import 'package:form/components/animations/let_get.dart';
 import 'package:form/components/animations/second_animation.dart';
+import 'package:form/components/animations/started.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -31,14 +32,7 @@ class _WelcomePageState extends State<WelcomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 LetGet(),
-                Text(
-                  'Started',
-                  style: TextStyle(
-                    fontSize: 75,
-                    fontWeight: FontWeight.bold,
-                    height: 1,
-                  ),
-                ),
+                Started(),
                 Text(
                   'Grow Together',
                   style: TextStyle(
