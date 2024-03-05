@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SecondCircle extends StatefulWidget {
-  const SecondCircle({super.key});
+class ImageTwo extends StatefulWidget {
+  const ImageTwo({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _SecondCircleState createState() => _SecondCircleState();
+  _ImageTwoState createState() => _ImageTwoState();
 }
 
-class _SecondCircleState extends State<SecondCircle>
+class _ImageTwoState extends State<ImageTwo>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
@@ -18,7 +18,7 @@ class _SecondCircleState extends State<SecondCircle>
     super.initState();
     _controller =
         AnimationController(duration: const Duration(seconds: 1), vsync: this);
-    _animation = Tween<Offset>(begin: const Offset(0.0, 1.0), end: Offset.zero)
+    _animation = Tween<Offset>(begin: const Offset(-0.1, 1.0), end: Offset.zero)
         .animate(_controller);
     _controller.forward();
   }
@@ -27,13 +27,9 @@ class _SecondCircleState extends State<SecondCircle>
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _animation,
-      child: Container(
-        width: 460,
-        height: 460,
-        decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 193, 210, 220),
-          borderRadius: BorderRadius.circular(250),
-        ),
+      child: const CircleAvatar(
+        radius: 90,
+        backgroundImage: AssetImage('lib/assets/downimage.png'),
       ),
     );
   }

@@ -17,10 +17,10 @@ class _ImageOneState extends State<ImageOne>
   void initState() {
     super.initState();
     _controller =
-        AnimationController(duration: const Duration(seconds: 3), vsync: this);
+        AnimationController(duration: const Duration(seconds: 1), vsync: this);
     _animation = Tween<Offset>(begin: const Offset(-1.0, 1.0), end: Offset.zero)
         .animate(_controller);
-    _controller.fling();
+    _controller.forward();
   }
 
   @override
