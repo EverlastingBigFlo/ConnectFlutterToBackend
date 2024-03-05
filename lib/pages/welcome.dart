@@ -103,13 +103,13 @@ class _WelcomePageState extends State<WelcomePage> {
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
               ),
               child: const Padding(
-                padding: EdgeInsets.all(20.0),
+                padding: EdgeInsets.fromLTRB(30, 5, 30, 5),
                 child: Text(
                   'JOIN NOW',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 36,
-                    fontWeight: FontWeight.w500,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
