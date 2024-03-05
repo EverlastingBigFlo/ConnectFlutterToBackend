@@ -30,22 +30,22 @@ class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
     return SlideTransition(
       position: _animation,
       child: ElevatedButton(
-              onPressed: () => {},
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-              ),
-              child: const Padding(
-                padding: EdgeInsets.fromLTRB(30, 5, 30, 5),
-                child: Text(
-                  'JOIN NOW',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
+        onPressed: () => {Navigator.pushNamed(context, 'signup')},
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+        ),
+        child: const Padding(
+          padding: EdgeInsets.fromLTRB(30, 5, 30, 5),
+          child: Text(
+            'JOIN NOW',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+              fontWeight: FontWeight.w400,
             ),
+          ),
+        ),
+      ),
     );
   }
 
