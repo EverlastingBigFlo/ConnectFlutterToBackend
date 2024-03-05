@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:form/pages/signin.dart';
 import 'package:form/pages/signup.dart';
 import 'package:form/pages/welcome.dart';
 
@@ -21,6 +22,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         'welcome': (context) => const WelcomePage(),
         'signup': (context) => const SignUp(),
+        'signin': (context) => const SignIn(),
       },
     );
   }
