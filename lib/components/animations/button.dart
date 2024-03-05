@@ -35,12 +35,12 @@ class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
           backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
         ),
         child: const Padding(
-          padding: EdgeInsets.fromLTRB(30, 5, 30, 5),
+          padding: EdgeInsets.fromLTRB(45, 10, 45, 10),
           child: Text(
             'JOIN NOW',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 25,
               fontWeight: FontWeight.w400,
             ),
           ),

@@ -39,7 +39,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ],
             ),
           ),
-          Positioned(bottom: 70, left: 90, child: Button()),
+          Positioned(bottom: 60, left: 90, child: Button()),
         ],
       ),
     );
