@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:form/pages/signup.dart';
 
 class Button extends StatefulWidget {
   const Button({super.key});
@@ -30,7 +31,7 @@ class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
     return SlideTransition(
       position: _animation,
       child: ElevatedButton(
-        onPressed: () => {Navigator.pushNamed(context, 'signin')},
+        onPressed: () => {Navigator.pushNamed(context, 'welcome')},
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
         ),
