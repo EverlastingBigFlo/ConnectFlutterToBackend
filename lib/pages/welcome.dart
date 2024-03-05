@@ -10,11 +10,28 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: const Color(0xFFF0F4F3),
       body: Stack(
         children: [
-          Container(),
+          Positioned(
+            // left: -100,
+            child: Container(
+              width: 460,
+              height: 460,
+              decoration: BoxDecoration(
+                color: Colors.indigoAccent,
+                borderRadius: BorderRadius.circular(200),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    spreadRadius: 5,
+                    blurRadius: 20,
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
