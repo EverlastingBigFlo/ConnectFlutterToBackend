@@ -15,13 +15,14 @@ class _WelcomePageState extends State<WelcomePage> {
       body: Stack(
         children: [
           Positioned(
-            // left: -100,
+            left: 40,
+            bottom: -30,
             child: Container(
               width: 460,
               height: 460,
               decoration: BoxDecoration(
-                color: Color(0xFFFF2365),
-                borderRadius: BorderRadius.circular(200),
+                color: const Color.fromARGB(255, 193, 210, 220),
+                borderRadius: BorderRadius.circular(250),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withOpacity(0.1),
