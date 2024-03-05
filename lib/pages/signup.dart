@@ -19,7 +19,7 @@ class _SignUpState extends State<SignUp> {
         children: [
           Positioned(left: -80, top: 50, child: FirstCircle()),
           Positioned(left: 50, bottom: 60, child: SecondCircle()),
-          // Positioned(bottom: 60, left: 90, child: SignUp()),
+          Positioned(bottom: 60, left: 90, child: SignUp()),
         ],
       ),
     );
