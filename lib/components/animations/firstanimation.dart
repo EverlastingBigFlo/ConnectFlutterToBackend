@@ -1,16 +1,13 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
 
-
-class SlideAnimationExample extends StatefulWidget {
-  const SlideAnimationExample({super.key});
+class FirstCircle extends StatefulWidget {
+  const FirstCircle({super.key});
 
   @override
-  _SlideAnimationExampleState createState() => _SlideAnimationExampleState();
+  _FirstCircleState createState() => _FirstCircleState();
 }
 
-class _SlideAnimationExampleState extends State<SlideAnimationExample>
+class _FirstCircleState extends State<FirstCircle>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
@@ -29,10 +26,24 @@ class _SlideAnimationExampleState extends State<SlideAnimationExample>
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _animation,
-      child: Container(
-        width: 100,
-        height: 100,
-        color: Colors.blue,
+      child: Positioned(
+        left: 20,
+        top: -150,
+        child: Container(
+          width: 460,
+          height: 460,
+          decoration: BoxDecoration(
+            color: const Color.fromARGB(255, 193, 210, 220),
+            borderRadius: BorderRadius.circular(250),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.1),
+                spreadRadius: 5,
+                blurRadius: 20,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
