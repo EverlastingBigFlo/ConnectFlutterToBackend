@@ -45,11 +45,15 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
             ),
           ),
-          Positioned(
-              left: 50,
-              top: 50,
-              child: CircleAvatar(child: Image.asset('lib/assets/upimage.png')))
-        
+          const Positioned(
+            left: 230,
+            top: 200,
+            child: CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('lib/assets/upimage.png'),
+            ),
+          ),
+          
         ],
       ),
     );
