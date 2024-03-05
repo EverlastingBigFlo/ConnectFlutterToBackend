@@ -15,11 +15,14 @@ class _LetGetState extends State<LetGet> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _controller =
-        AnimationController(duration: const Duration(seconds: 1), vsync: this);
-    _animation = Tween<Offset>(begin: const Offset(-1.0, 0.1), end: Offset.zero)
-        .animate(_controller);
-    _controller.forward();
+    Future.delayed(const Duration(seconds: 3), () {
+      _controller = AnimationController(
+          duration: const Duration(seconds: 1), vsync: this);
+      _animation =
+          Tween<Offset>(begin: const Offset(-1.0, 0.1), end: Offset.zero)
+              .animate(_controller);
+      _controller.forward();
+    });
   }
 
   @override
