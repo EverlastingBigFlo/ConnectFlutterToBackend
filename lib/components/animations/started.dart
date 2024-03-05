@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class LetGet extends StatefulWidget {
-  const LetGet({super.key});
+class Started extends StatefulWidget {
+  const Started({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _LetGetState createState() => _LetGetState();
+  _StartedState createState() => _StartedState();
 }
 
-class _LetGetState extends State<LetGet> with SingleTickerProviderStateMixin {
+class _StartedState extends State<Started> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
 
