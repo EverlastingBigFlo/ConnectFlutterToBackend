@@ -17,7 +17,7 @@ class _StartedState extends State<Started> with SingleTickerProviderStateMixin {
     super.initState();
     _controller =
         AnimationController(duration: const Duration(seconds: 1), vsync: this);
-    _animation = Tween<Offset>(begin: const Offset(-0.0, 1.0), end: Offset.zero)
+    _animation = Tween<Offset>(begin: const Offset(2.0, 0.1), end: Offset.zero)
         .animate(_controller);
 
     Future.delayed(const Duration(seconds: 1), () {
