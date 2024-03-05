@@ -109,7 +109,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         fontSize: 36,
                         fontWeight: FontWeight.w500,
                         fontFamily:
-                            'Inder', // Use the font family name declared in pubspec.yaml
+                            'Inder',
                       ),
                     ))))
       ]),
