@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:form/pages/signup.dart';
+import 'package:form/pages/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +17,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      
-      initialRoute: '/',
+      initialRoute: 'welcome',
       routes: {
-        '/': (context) => const SignUp(),
+        'welcome': (context) => const WelcomePage(),
+        'signup': (context) => const SignUp(),
       },
     );
   }
