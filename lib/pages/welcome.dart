@@ -71,6 +71,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   style: TextStyle(
                     fontSize: 75,
                     fontWeight: FontWeight.bold,
+                    height: 1,
                   ),
                 ),
                 Text(
@@ -78,6 +79,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   style: TextStyle(
                     fontSize: 75,
                     fontWeight: FontWeight.bold,
+                    height: 1,
                   ),
                 ),
                 Text(
