@@ -53,7 +53,13 @@ class _WelcomePageState extends State<WelcomePage> {
               backgroundImage: AssetImage('lib/assets/upimage.png'),
             ),
           ),
-          
+          const Positioned(
+              left: 120,
+              bottom: 400,
+              child: CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('lib/assets/downimage.png'),
+              ))
         ],
       ),
     );
