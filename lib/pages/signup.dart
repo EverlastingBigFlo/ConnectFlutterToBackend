@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:form/components/animations/button.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/grow.dart';
-import 'package:form/components/animations/image_one.dart';
-import 'package:form/components/animations/image_two.dart';
 import 'package:form/components/animations/let_get.dart';
 import 'package:form/components/animations/second_animation.dart';
 import 'package:form/components/animations/started.dart';
@@ -25,8 +23,6 @@ class _SignUpState extends State<SignUp> {
         children: [
           Positioned(left: 20, top: -150, child: FirstCircle()),
           Positioned(left: 210, bottom: 310, child: SecondCircle()),
-          Positioned(left: 270, top: 140, child: ImageOne()),
-          Positioned(left: 100, bottom: 400, child: ImageTwo()),
           Positioned(
             bottom: 150,
             left: 60,
