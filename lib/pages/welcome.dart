@@ -45,6 +45,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
             ),
           ),
+          Positioned(child: Image.asset(''))
         ],
       ),
     );
