@@ -20,7 +20,7 @@ class _WelcomePageState extends State<WelcomePage> {
               width: 460,
               height: 460,
               decoration: BoxDecoration(
-                color: Colors.indigoAccent,
+                color: Color(0xFFFF2365),
                 borderRadius: BorderRadius.circular(200),
                 boxShadow: [
                   BoxShadow(
