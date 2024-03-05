@@ -32,7 +32,7 @@ class _CreateState extends State<Create> with SingleTickerProviderStateMixin {
       child: const Text(
         'Create',
         style: TextStyle(
-          fontSize: 75,
+          fontSize: 32,
           fontWeight: FontWeight.bold,
           height: 1,
         ),
@@ -46,6 +46,8 @@ class _CreateState extends State<Create> with SingleTickerProviderStateMixin {
     super.dispose();
   }
 }
+
+// account widget
 
 class Account extends StatefulWidget {
   const Account({super.key});
@@ -64,7 +66,7 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
     super.initState();
     _controller =
         AnimationController(duration: const Duration(seconds: 1), vsync: this);
-    _animation = Tween<Offset>(begin: const Offset(-2.0, 0.1), end: Offset.zero)
+    _animation = Tween<Offset>(begin: const Offset(2.0, 0.1), end: Offset.zero)
         .animate(_controller);
 
     Future.delayed(const Duration(seconds: 1), () {
@@ -79,7 +81,7 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
       child: const Text(
         'Account :)',
         style: TextStyle(
-          fontSize: 75,
+          fontSize: 32,
           fontWeight: FontWeight.bold,
           height: 1,
         ),
