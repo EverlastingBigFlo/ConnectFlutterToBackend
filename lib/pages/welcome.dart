@@ -35,7 +35,7 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
           Positioned(
             left: 200,
-            bottom: 200,
+            bottom: 250,
             child: Container(
               width: 460,
               height: 460,
@@ -61,15 +61,28 @@ class _WelcomePageState extends State<WelcomePage> {
                 backgroundImage: AssetImage('lib/assets/downimage.png'),
               )),
           const Positioned(
-              bottom: 200,
-              left: 10,
-              child: Text(
-                'Let’s Get Started',
-                style: TextStyle(
-                  fontSize: 75,
-                  fontWeight: FontWeight.bold,
+            bottom: 100,
+            left: 20,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Let\'s Get',
+                  style: TextStyle(
+                    fontSize: 75,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ))
+                Text(
+                  'Started',
+                  style: TextStyle(
+                    fontSize: 75,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
