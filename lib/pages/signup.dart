@@ -18,8 +18,8 @@ class _SignUpState extends State<SignUp> {
       backgroundColor: Color(0xFFF0F4F3),
       body: Stack(
         children: [
-          Positioned(left: 20, top: -150, child: FirstCircle()),
-          Positioned(left: 210, bottom: 310, child: SecondCircle()),
+          Positioned(left: -80, top: 50, child: FirstCircle()),
+          Positioned(left: 50, bottom: 60, child: SecondCircle()),
           Positioned(bottom: 60, left: 90, child: Button()),
         ],
       ),
