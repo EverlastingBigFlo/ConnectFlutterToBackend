@@ -16,7 +16,7 @@ class _WelcomePageState extends State<WelcomePage> {
         children: [
           Positioned(
             left: 20,
-            top: -60,
+            top: -150,
             child: Container(
               width: 460,
               height: 460,
@@ -35,7 +35,7 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
           Positioned(
             left: 210,
-            bottom: 260,
+            bottom: 310,
             child: Container(
               width: 460,
               height: 460,
@@ -46,8 +46,8 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
           ),
           const Positioned(
-            left: 230,
-            top: 200,
+            left: 270,
+            top: 140,
             child: CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('lib/assets/upimage.png'),
@@ -55,14 +55,14 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
           const Positioned(
               left: 100,
-              bottom: 340,
+              bottom: 400,
               child: CircleAvatar(
                 radius: 90,
                 backgroundImage: AssetImage('lib/assets/downimage.png'),
               )),
           const Positioned(
-            bottom: 100,
-            left: 50,
+            bottom: 150,
+            left: 60,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -91,8 +91,20 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
               ],
             ),
-          )
-        ],
+          ),
+          Positioned(
+              bottom: 70,
+              left: 150,
+              child: ElevatedButton(
+                onPressed: () => {},
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.black),
+                ),
+                child: const Text('JOIN NOW', 
+                style: TextStyle(color: Colors.white,)
+              )))
+        ]
       ),
     );
   }
