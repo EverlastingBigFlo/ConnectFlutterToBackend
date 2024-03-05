@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:form/pages/signup.dart';
 
-class Button extends StatefulWidget {
-  const Button({super.key});
+
+class SignUpButton extends StatefulWidget {
+  const SignUpButton({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _ButtonState createState() => _ButtonState();
+  _SignUpButtonState createState() => _SignUpButtonState();
 }
 
-class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
+class _SignUpButtonState extends State<SignUpButton> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
 
@@ -31,7 +31,7 @@ class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
     return SlideTransition(
       position: _animation,
       child: ElevatedButton(
-        onPressed: () => {Navigator.pushNamed(context, 'welcome')},
+        onPressed: () => {Navigator.pushNamed(context, 'signin')},
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
         ),
