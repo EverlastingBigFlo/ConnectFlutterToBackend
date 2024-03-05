@@ -15,8 +15,8 @@ class _WelcomePageState extends State<WelcomePage> {
       body: Stack(
         children: [
           Positioned(
-            left: 40,
-            bottom: -30,
+            left: 30,
+            top: -30,
             child: Container(
               width: 460,
               height: 460,
