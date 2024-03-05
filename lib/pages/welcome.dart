@@ -34,8 +34,8 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
           ),
           Positioned(
-            left: 200,
-            bottom: 250,
+            left: 210,
+            bottom: 260,
             child: Container(
               width: 460,
               height: 460,
@@ -62,7 +62,7 @@ class _WelcomePageState extends State<WelcomePage> {
               )),
           const Positioned(
             bottom: 100,
-            left: 20,
+            left: 50,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -78,6 +78,13 @@ class _WelcomePageState extends State<WelcomePage> {
                   style: TextStyle(
                     fontSize: 75,
                     fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'Grow Together',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
               ],
