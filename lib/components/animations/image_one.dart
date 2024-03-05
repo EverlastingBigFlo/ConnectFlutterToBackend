@@ -20,7 +20,9 @@ class _ImageOneState extends State<ImageOne>
         AnimationController(duration: const Duration(seconds: 1), vsync: this);
     _animation = Tween<Offset>(begin: const Offset(-1.0, 1.0), end: Offset.zero)
         .animate(_controller);
-    _controller.forward();
+   Future.delayed(const Duration(seconds: 1), (){
+     _controller.forward();
+   });
   }
 
   @override

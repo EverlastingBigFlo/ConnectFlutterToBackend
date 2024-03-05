@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:form/components/animations/button.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/grow.dart';
 import 'package:form/components/animations/image_one.dart';
@@ -18,15 +19,15 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFF0F4F3),
+    return const Scaffold(
+      backgroundColor: Color(0xFFF0F4F3),
       body: Stack(
         children: [
-          const Positioned(left: 20, top: -150, child: FirstCircle()),
-          const Positioned(left: 210, bottom: 310, child: SecondCircle()),
-          const Positioned(left: 270, top: 140, child: ImageOne()),
-          const Positioned(left: 100, bottom: 400, child: ImageTwo()),
-          const Positioned(
+          Positioned(left: 20, top: -150, child: FirstCircle()),
+          Positioned(left: 210, bottom: 310, child: SecondCircle()),
+          Positioned(left: 270, top: 140, child: ImageOne()),
+          Positioned(left: 100, bottom: 400, child: ImageTwo()),
+          Positioned(
             bottom: 150,
             left: 60,
             child: Column(
@@ -38,27 +39,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ],
             ),
           ),
-          Positioned(
-            bottom: 70,
-            left: 90,
-            child: ElevatedButton(
-              onPressed: () => {},
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-              ),
-              child: const Padding(
-                padding: EdgeInsets.fromLTRB(30, 5, 30, 5),
-                child: Text(
-                  'JOIN NOW',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-            ),
-          ),
+          Positioned(bottom: 70, left: 90, child: Button()),
         ],
       ),
     );
