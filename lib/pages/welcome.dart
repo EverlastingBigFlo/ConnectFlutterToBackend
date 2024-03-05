@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:form/components/animations/firstanimation.dart';
+import 'package:form/components/animations/first_animation.dart';
+import 'package:form/components/animations/second_animation.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -16,19 +17,8 @@ class _WelcomePageState extends State<WelcomePage> {
       backgroundColor: const Color(0xFFF0F4F3),
       body: Stack(
         children: [
-          const FirstCircle(),
-          Positioned(
-            left: 210,
-            bottom: 310,
-            child: Container(
-              width: 460,
-              height: 460,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 193, 210, 220),
-                borderRadius: BorderRadius.circular(250),
-              ),
-            ),
-          ),
+          const Positioned(left: 20, top: -150, child: FirstCircle()),
+          const Positioned(left: 210, bottom: 310, child: SecondCircle()),
           const Positioned(
             left: 270,
             top: 140,

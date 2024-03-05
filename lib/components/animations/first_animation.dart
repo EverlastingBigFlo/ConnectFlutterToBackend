@@ -26,23 +26,19 @@ class _FirstCircleState extends State<FirstCircle>
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _animation,
-      child: Positioned(
-        left: 20,
-        top: -150,
-        child: Container(
-          width: 460,
-          height: 460,
-          decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 193, 210, 220),
-            borderRadius: BorderRadius.circular(250),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.1),
-                spreadRadius: 5,
-                blurRadius: 20,
-              ),
-            ],
-          ),
+      child: Container(
+        width: 460,
+        height: 460,
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 193, 210, 220),
+          borderRadius: BorderRadius.circular(250),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              spreadRadius: 5,
+              blurRadius: 20,
+            ),
+          ],
         ),
       ),
     );
