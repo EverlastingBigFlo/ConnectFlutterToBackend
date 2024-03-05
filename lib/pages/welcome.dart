@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:form/components/animations/first_animation.dart';
+import 'package:form/components/animations/image_one.dart';
 import 'package:form/components/animations/second_animation.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
@@ -19,14 +20,7 @@ class _WelcomePageState extends State<WelcomePage> {
         children: [
           const Positioned(left: 20, top: -150, child: FirstCircle()),
           const Positioned(left: 210, bottom: 310, child: SecondCircle()),
-          const Positioned(
-            left: 270,
-            top: 140,
-            child: CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage('lib/assets/upimage.png'),
-            ),
-          ),
+          const Positioned(left: 270, top: 140, child: ImageOne()),
           const Positioned(
             left: 100,
             bottom: 400,
