@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/image_one.dart';
 import 'package:form/components/animations/image_two.dart';
+import 'package:form/components/animations/let_get.dart';
 import 'package:form/components/animations/second_animation.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
@@ -29,14 +30,7 @@ class _WelcomePageState extends State<WelcomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Let\'s Get',
-                  style: TextStyle(
-                    fontSize: 75,
-                    fontWeight: FontWeight.bold,
-                    height: 1,
-                  ),
-                ),
+                LetGet(),
                 Text(
                   'Started',
                   style: TextStyle(
