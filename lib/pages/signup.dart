@@ -17,25 +17,27 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color(0xFFF0F4F3),
-      body: Stack(
-        children: [
-          Positioned(left: -80, top: 50, child: FirstCircle()),
-          Positioned(left: 50, bottom: 60, child: SecondCircle()),
-          Positioned(top: 65, left: 30, child: Create()),
-          Positioned(top: 100, left: 30, child: Account()),
-          Positioned.fill(
-            top: 200,
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: SignUpInput(),
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Positioned(left: -80, top: 50, child: FirstCircle()),
+            Positioned(left: 50, bottom: 60, child: SecondCircle()),
+            Positioned(top: 65, left: 30, child: Create()),
+            Positioned(top: 100, left: 30, child: Account()),
+            Positioned.fill(
+              top: 200,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10),
+                child: SignUpInput(),
+              ),
             ),
-          ),
-          Positioned(
-            bottom: 20,
-            left: 90,
-            child: SignUpButton(),
-          ),
-        ],
+            Positioned(
+              bottom: 20,
+              left: 90,
+              child: SignUpButton(),
+            ),
+          ],
+        ),
       ),
     );
   }
