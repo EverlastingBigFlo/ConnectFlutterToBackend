@@ -38,9 +38,9 @@ class InputField extends StatelessWidget {
       obscureText: isObscure,
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: const TextStyle(color: Colors.black),
+        labelStyle: const TextStyle(color: Colors.black, fontSize: 18),
         focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: BorderSide(color: Colors.black, width: 5.0),
         ),
       ),
     );

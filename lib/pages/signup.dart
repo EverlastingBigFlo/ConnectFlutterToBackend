@@ -6,7 +6,7 @@ import 'package:form/components/animations/signup_button.dart';
 import 'package:form/components/signup_input.dart';
 
 class SignUp extends StatefulWidget {
-  const SignUp({Key? key}) : super(key: key);
+  const SignUp({super.key});
 
   @override
   State<SignUp> createState() => _SignUpState();
