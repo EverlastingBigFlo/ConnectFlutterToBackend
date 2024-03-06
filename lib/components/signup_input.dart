@@ -10,8 +10,7 @@ class SignUpInput extends StatefulWidget {
 class _SignUpInputState extends State<SignUpInput> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        body: Padding(
+    return const Padding(
       padding: EdgeInsets.all(20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,7 +22,7 @@ class _SignUpInputState extends State<SignUpInput> {
           InputField(label: 'Create Password', isObscure: true),
         ],
       ),
-    ));
+    );
   }
 }
 
