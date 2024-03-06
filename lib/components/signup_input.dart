@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-class FormInput extends StatefulWidget {
-  const FormInput({super.key});
+class SignUpInput extends StatefulWidget {
+  const SignUpInput({super.key});
 
   @override
-  State<FormInput> createState() => _FormInputState();
+  State<SignUpInput> createState() => _SignUpInputState();
 }
 
-class _FormInputState extends State<FormInput> {
+class _SignUpInputState extends State<SignUpInput> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

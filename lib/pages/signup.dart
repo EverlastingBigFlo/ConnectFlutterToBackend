@@ -3,7 +3,7 @@ import 'package:form/components/animations/create_text.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/second_animation.dart';
 import 'package:form/components/animations/signup_button.dart';
-import 'package:form/components/form_input.dart';
+import 'package:form/components/signup_input.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class SignUp extends StatefulWidget {
@@ -24,7 +24,10 @@ class _SignUpState extends State<SignUp> {
           Positioned(left: 50, bottom: 60, child: SecondCircle()),
           Positioned(top: 65, left: 30, child: Create()),
           Positioned(top: 100, left: 30, child: Account()),
-          Positioned(child: FormInput()),
+          Positioned(
+            left: 1,
+            child: SignUpInput(),
+          ),
           Positioned(bottom: 60, left: 90, child: SignUpButton()),
         ],
       ),
