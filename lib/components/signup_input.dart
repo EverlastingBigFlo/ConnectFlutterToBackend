@@ -38,7 +38,7 @@ class InputField extends StatelessWidget {
       obscureText: isObscure,
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: const TextStyle(color: Colors.grey),
+        labelStyle: const TextStyle(color: Colors.black),
         focusedBorder: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.black),
         ),
