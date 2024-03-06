@@ -9,7 +9,8 @@ class SigninEnterYour extends StatefulWidget {
   _SigninEnterYourState createState() => _SigninEnterYourState();
 }
 
-class _SigninEnterYourState extends State<SigninEnterYour> with SingleTickerProviderStateMixin {
+class _SigninEnterYourState extends State<SigninEnterYour>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
 
@@ -34,7 +35,7 @@ class _SigninEnterYourState extends State<SigninEnterYour> with SingleTickerProv
         'Enter Your Username & Password',
         style: GoogleFonts.inter(
           fontSize: 18,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           height: 1,
         ),
       ),
