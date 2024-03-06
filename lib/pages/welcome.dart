@@ -29,7 +29,7 @@ class _WelcomePageState extends State<WelcomePage> {
           Positioned(left: 100, bottom: 400, child: ImageTwo()),
           Positioned(
             bottom: 150,
-            left: 60,
+            left: 50,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
