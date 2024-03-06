@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Button extends StatefulWidget {
   const Button({super.key});
@@ -34,14 +35,14 @@ class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
         ),
-        child: const Padding(
-          padding: EdgeInsets.fromLTRB(45, 10, 45, 10),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(45, 10, 45, 10),
           child: Text(
             'JOIN NOW',
-            style: TextStyle(
-              color: Colors.white,
+            style: GoogleFonts.inder(
               fontSize: 25,
-              fontWeight: FontWeight.w400,
+              color: Colors.white,
+              fontWeight: FontWeight.normal,
             ),
           ),
         ),
