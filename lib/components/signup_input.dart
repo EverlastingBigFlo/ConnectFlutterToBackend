@@ -40,7 +40,7 @@ class InputField extends StatelessWidget {
         labelText: label,
         labelStyle: const TextStyle(color: Colors.black, fontSize: 18),
         focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.black, width: 5.0),
+          borderSide: BorderSide(color: Colors.black, width: 2.0),
         ),
       ),
     );
