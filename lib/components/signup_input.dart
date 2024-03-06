@@ -11,14 +11,14 @@ class _SignUpInputState extends State<SignUpInput> {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.all(20.0),
+      padding: EdgeInsets.all(10.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           InputField(label: 'Enter Email Id'),
-          SizedBox(height: 20.0),
+          SizedBox(height: 30.0),
           InputField(label: 'Create Username'),
-          SizedBox(height: 20.0),
+          SizedBox(height: 30.0),
           InputField(label: 'Create Password', isObscure: true),
         ],
       ),
