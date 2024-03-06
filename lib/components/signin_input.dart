@@ -16,11 +16,9 @@ class _SignUpInputState extends State<SignUpInput> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            InputField(label: 'Enter Email Id'),
+            InputField(label: 'Username'),
             SizedBox(height: 40.0),
-            InputField(label: 'Create Username'),
-            SizedBox(height: 40.0),
-            InputField(label: 'Create Password', isObscure: true),
+            InputField(label: 'Password', isObscure: true),
             SizedBox(height: 40.0),
           ],
         ),
