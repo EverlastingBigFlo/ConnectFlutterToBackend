@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Grow extends StatefulWidget {
   const Grow({super.key});
@@ -29,11 +30,12 @@ class _GrowState extends State<Grow> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _animation,
-      child: const Text(
+      child: Text(
         'Grow Together',
-        style: TextStyle(
+        style: GoogleFonts.inter(
           fontSize: 20,
           fontWeight: FontWeight.normal,
+          height: 1,
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Started extends StatefulWidget {
   const Started({super.key});
@@ -29,9 +30,9 @@ class _StartedState extends State<Started> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _animation,
-      child: const Text(
+      child: Text(
         'Started',
-        style: TextStyle(
+        style: GoogleFonts.inter(
           fontSize: 75,
           fontWeight: FontWeight.bold,
           height: 1,
