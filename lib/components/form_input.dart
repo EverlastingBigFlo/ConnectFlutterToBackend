@@ -12,8 +12,7 @@ class _FormInputState extends State<FormInput> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body:
-          Padding(
+        body: Padding(
       padding: EdgeInsets.all(20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,11 +24,9 @@ class _FormInputState extends State<FormInput> {
           InputField(label: 'Create Password', isObscure: true),
         ],
       ),
-    )
-    );
+    ));
   }
 }
-
 
 class InputField extends StatelessWidget {
   final String label;
