@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:form/components/animations/create_text.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/second_animation.dart';
+import 'package:form/components/animations/signin_button.dart';
 import 'package:form/components/animations/signin_enteryour.dart';
 import 'package:form/components/animations/signin_welcomeback.dart';
 import 'package:form/components/animations/signup_button.dart';
@@ -36,7 +37,7 @@ class _SignInState extends State<SignIn> {
           Positioned(
             bottom: 20,
             left: 90,
-            child: SignUpButton(),
+            child: SignInButton(),
           ),
         ],
       ),
