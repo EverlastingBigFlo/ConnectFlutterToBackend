@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:form/components/animations/create_text.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/second_animation.dart';
@@ -23,11 +25,14 @@ class _SignUpState extends State<SignUp> {
           Positioned(left: 50, bottom: 60, child: SecondCircle()),
           Positioned(top: 65, left: 30, child: Create()),
           Positioned(top: 100, left: 30, child: Account()),
-          Positioned(
-            top: 10,
-            child: SignUpInput(),
+          Expanded(
+            child: Positioned(
+              top: 10,
+              child: SignUpInput(),
+            ),
           ),
-          Positioned(bottom: 60, left: 90, child: SignUpButton()),
+          Expanded(
+              child: Positioned(bottom: 60, left: 90, child: SignUpButton())),
         ],
       ),
     );
