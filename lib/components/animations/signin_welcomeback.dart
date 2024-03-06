@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Create extends StatefulWidget {
-  const Create({super.key});
+class SignInWelcomeBack extends StatefulWidget {
+  const SignInWelcomeBack({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _CreateState createState() => _CreateState();
+  _SignInWelcomeBackState createState() => _SignInWelcomeBackState();
 }
 
-class _CreateState extends State<Create> with SingleTickerProviderStateMixin {
+class _SignInWelcomeBackState extends State<SignInWelcomeBack>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
 
@@ -95,5 +96,3 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
     super.dispose();
   }
 }
-
-

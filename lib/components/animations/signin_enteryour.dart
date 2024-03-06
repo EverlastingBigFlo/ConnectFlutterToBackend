@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Started extends StatefulWidget {
-  const Started({super.key});
+class SigninEnterYour extends StatefulWidget {
+  const SigninEnterYour({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _StartedState createState() => _StartedState();
+  _SigninEnterYourState createState() => _SigninEnterYourState();
 }
 
-class _StartedState extends State<Started> with SingleTickerProviderStateMixin {
+class _SigninEnterYourState extends State<SigninEnterYour> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
 
