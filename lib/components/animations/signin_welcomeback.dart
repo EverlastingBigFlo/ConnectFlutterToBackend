@@ -31,7 +31,7 @@ class _SignInWelcomeBackState extends State<SignInWelcomeBack>
     return SlideTransition(
       position: _animation,
       child: const Text(
-        'Create',
+        'Welcome Back',
         style: TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.bold,

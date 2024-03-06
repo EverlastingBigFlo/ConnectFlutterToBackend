@@ -1,13 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:form/components/animations/create_text.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/second_animation.dart';
 import 'package:form/components/animations/signin_button.dart';
 import 'package:form/components/animations/signin_enteryour.dart';
 import 'package:form/components/animations/signin_welcomeback.dart';
-import 'package:form/components/animations/signup_button.dart';
-import 'package:form/components/signup_input.dart';
+import 'package:form/components/signin_input.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
@@ -26,12 +23,12 @@ class _SignInState extends State<SignIn> {
           Positioned(left: -80, top: 50, child: FirstCircle()),
           Positioned(left: 50, bottom: 60, child: SecondCircle()),
           Positioned(top: 65, left: 30, child: SignInWelcomeBack()),
-          Positioned(top: 100, left: 30, child: SigninEnterYour()),
+          Positioned(top: 120, left: 30, child: SigninEnterYour()),
           Positioned.fill(
             top: 200,
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
-              child: SignUpInput(),
+              child: SignInInput(),
             ),
           ),
           Positioned(

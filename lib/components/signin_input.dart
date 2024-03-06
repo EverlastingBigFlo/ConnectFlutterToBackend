@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SignUpInput extends StatefulWidget {
-  const SignUpInput({super.key});
+class SignInInput extends StatefulWidget {
+  const SignInInput({super.key});
 
   @override
-  State<SignUpInput> createState() => _SignUpInputState();
+  State<SignInInput> createState() => _SignInInputState();
 }
 
-class _SignUpInputState extends State<SignUpInput> {
+class _SignInInputState extends State<SignInInput> {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
