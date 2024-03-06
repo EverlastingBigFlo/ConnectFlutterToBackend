@@ -6,14 +6,14 @@ import 'package:form/components/animations/second_animation.dart';
 import 'package:form/components/animations/signup_button.dart';
 import 'package:form/components/signup_input.dart';
 
-class SignUp extends StatefulWidget {
-  const SignUp({super.key});
+class SignIn extends StatefulWidget {
+  const SignIn({super.key});
 
   @override
-  State<SignUp> createState() => _SignUpState();
+  State<SignIn> createState() => _SignInState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
