@@ -24,7 +24,7 @@ class _SignUpState extends State<SignUp> {
           Positioned(top: 65, left: 30, child: Create()),
           Positioned(top: 100, left: 30, child: Account()),
           Positioned(
-            top: 10,
+            // top: 10,
             child: SignUpInput(),
           ),
           Positioned(bottom: 60, left: 90, child: SignUpButton()),
