@@ -20,6 +20,8 @@ class _SignUpInputState extends State<SignUpInput> {
           InputField(label: 'Create Username'),
           SizedBox(height: 40.0),
           InputField(label: 'Create Password', isObscure: true),
+          SizedBox(height: 40.0),
+          InputField(label: 'Confirm Password', isObscure: true),
         ],
       ),
     );

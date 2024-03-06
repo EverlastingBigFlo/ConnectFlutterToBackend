@@ -31,7 +31,7 @@ class _SignUpState extends State<SignUp> {
             ),
           ),
           Positioned(
-            bottom: 60,
+            bottom: 20,
             left: 90,
             child: SignUpButton(),
           ),
