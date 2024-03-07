@@ -9,41 +9,6 @@ class SignInInput extends StatefulWidget {
 }
 
 class _SignInInputState extends State<SignInInput> {
-  late TextEditingController controller1;
-  late TextEditingController controller2;
-  late TextEditingController controller3;
-  late TextEditingController controller4;
-  late FocusNode focusnode1;
-  late FocusNode focusnode2;
-  late FocusNode focusnode3;
-  late FocusNode focusnode4;
-
-  @override
-  void initState() {
-    super.initState();
-    controller1 = TextEditingController();
-    controller2 = TextEditingController();
-    controller3 = TextEditingController();
-    controller4 = TextEditingController();
-    focusnode1 = FocusNode();
-    focusnode2 = FocusNode();
-    focusnode3 = FocusNode();
-    focusnode4 = FocusNode();
-  }
-
-  @override
-  void dispose() {
-    //TODO: implement dispose
-    super.dispose();
-    controller1.dispose();
-    controller2.dispose();
-    controller3.dispose();
-    controller4.dispose();
-    focusnode1.dispose();
-    focusnode2.dispose();
-    focusnode3.dispose();
-    focusnode4.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
