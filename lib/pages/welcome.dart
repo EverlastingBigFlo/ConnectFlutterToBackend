@@ -7,6 +7,7 @@ import 'package:form/components/animations/image_two.dart';
 import 'package:form/components/animations/let_get.dart';
 import 'package:form/components/animations/second_animation.dart';
 import 'package:form/components/animations/started.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -17,12 +18,26 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
+  late SharedPreferences prefs;
+
   @override
   void initState() {
     //TODO: implement initState
     super.initState();
     Future.delayed(const Duration(milliseconds: 5000),
         () => {Navigator.pushNamed(context, 'signup')});
+  }
+
+  void setLogin() async {
+    prefs = await SharedPreferences.getInstance();
+
+    bool? data = prefs.getBool('signin');
+
+    if (data == true) {
+      Navigator.pushNamed(context, 'signin');
+    } else {
+      Navigator.pushNamed(context, 'signup');
+    }
   }
 
   Widget build(BuildContext context) {
@@ -46,7 +61,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ],
             ),
           ),
-          Positioned(bottom: 60, left: 90, child: Button()),
+          // Positioned(bottom: 60, left: 90, child: Button()),
         ],
       ),
     );
