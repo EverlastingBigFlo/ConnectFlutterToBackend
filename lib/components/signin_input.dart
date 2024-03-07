@@ -1,15 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class SignInInput extends StatefulWidget {
-  late TextEditingController? controllers;
-  late FocusNode? focusnode;
-
-  SignInInput({
-    super.key,
-    this.controllers,
-    this.focusnode,
-  });
+  const SignInInput({super.key});
 
   @override
   State<SignInInput> createState() => _SignInInputState();
@@ -24,13 +16,9 @@ class _SignInInputState extends State<SignInInput> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // InputField(label: 'Username'),
-            // SizedBox(height: 40.0),
-            // InputField(label: 'Password', isObscure: true),
-            // SizedBox(height: 40.0),
-            InputField(
-              label: '',
-            ),
+            InputField(label: 'Username'),
+            SizedBox(height: 40.0),
+            InputField(label: 'Password', isObscure: true),
             SizedBox(height: 40.0),
           ],
         ),
