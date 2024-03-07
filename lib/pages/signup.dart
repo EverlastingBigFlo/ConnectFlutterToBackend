@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:form/components/animations/create_text.dart';
 import 'package:form/components/animations/first_animation.dart';
 import 'package:form/components/animations/second_animation.dart';
-import 'package:form/components/animations/signup_button.dart';
+// import 'package:form/components/animations/signup_button.dart';
 import 'package:form/components/signup_input.dart';
 
 class SignUp extends StatefulWidget {
@@ -31,11 +30,11 @@ class _SignUpState extends State<SignUp> {
               child: SignUpInput(),
             ),
           ),
-          Positioned(
-            bottom: 20,
-            left: 90,
-            child: SignUpButton(),
-          ),
+          // Positioned(
+          //   bottom: 20,
+          //   left: 90,
+          //   child: SignUpButton(),
+          // ),
         ],
       ),
     );
