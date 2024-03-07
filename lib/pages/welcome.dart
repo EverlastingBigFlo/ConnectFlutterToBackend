@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:form/components/animations/button.dart';
 import 'package:form/components/animations/first_animation.dart';
@@ -40,7 +42,7 @@ class _WelcomePageState extends State<WelcomePage> {
     }
   }
 
-
+  @override
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color(0xFFF0F4F3),
