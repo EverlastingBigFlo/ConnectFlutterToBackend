@@ -12,6 +12,7 @@ class SignIn extends StatefulWidget {
   @override
   State<SignIn> createState() => _SignInState();
 }
+
 class _SignInState extends State<SignIn> {
   late TextEditingController controller1;
   late TextEditingController controller2;
@@ -37,6 +38,7 @@ class _SignInState extends State<SignIn> {
 
   @override
   void dispose() {
+    //TODO: implement dispose
     super.dispose();
     controller1.dispose();
     controller2.dispose();
@@ -51,55 +53,38 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(240, 244, 243, 1),
-      body: Stack(
+      backgroundColor: Colors.blueGrey, // Change background color here
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Positioned(left: -80, top: 50, child: FirstCircle()),
-          const Positioned(left: 50, bottom: 60, child: SecondCircle()),
-          const Positioned(top: 65, left: 30, child: SignInWelcomeBack()),
-          const Positioned(top: 120, left: 30, child: SigninEnterYour()),
-          Positioned(
-            top: 200,
-            left: 10,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: SignInInput(
-                controllers: controller1,
-                focusnode: focusnode1,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 260,
-            left: 10,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: SignInInput(
-                controllers: controller2,
-                focusnode: focusnode2,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 320,
-            left: 10,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: SignInInput(
-                controllers: controller3,
-                focusnode: focusnode3,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 380,
-            left: 10,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: SignInInput(
-                controllers: controller4,
-                focusnode: focusnode4,
-              ),
+          const SignInWelcomeBack(), // Add SignInWelcomeBack widget
+          const SizedBox(height: 10), // Add space between text and inputs
+          const SigninEnterYour(), // Add SigninEnterYour widget
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Column(
+              children: [
+                SizedBox(height: 20), // Add space before inputs
+                SignInInput(
+                  controllers: controller1,
+                  focusnode: focusnode1,
+                ),
+                SizedBox(height: 20), // Add space between inputs
+                SignInInput(
+                  controllers: controller2,
+                  focusnode: focusnode2,
+                ),
+                SizedBox(height: 20), // Add space between inputs
+                SignInInput(
+                  controllers: controller3,
+                  focusnode: focusnode3,
+                ),
+                SizedBox(height: 20), // Add space between inputs
+                SignInInput(
+                  controllers: controller4,
+                  focusnode: focusnode4,
+                ),
+              ],
             ),
           ),
         ],
