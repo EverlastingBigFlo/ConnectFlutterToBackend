@@ -18,7 +18,7 @@ class _SignInInputState extends State<SignInInput> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            InputField(label: 'Username'),
+            InputField(label: 'Username', ),
             SizedBox(height: 40.0),
             InputField(label: 'Password', isObscure: true),
             SizedBox(height: 40.0),
