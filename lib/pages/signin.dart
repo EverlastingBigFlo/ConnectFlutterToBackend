@@ -22,7 +22,7 @@ class _SignInState extends State<SignIn> {
   late FocusNode focusnode2;
   late FocusNode focusnode3;
   late FocusNode focusnode4;
-  
+
   @override
   void initState() {
     super.initState();
@@ -34,6 +34,20 @@ class _SignInState extends State<SignIn> {
     focusnode2 = FocusNode();
     focusnode3 = FocusNode();
     focusnode4 = FocusNode();
+  }
+
+  @override
+  void dispose() {
+    //TODO: implement dispose
+    super.dispose();
+    controller1.dispose();
+    controller2.dispose();
+    controller3.dispose();
+    controller4.dispose();
+    focusnode1.dispose();
+    focusnode2.dispose();
+    focusnode3.dispose();
+    focusnode4.dispose();
   }
 
   @override
