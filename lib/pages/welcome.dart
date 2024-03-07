@@ -25,7 +25,7 @@ class _WelcomePageState extends State<WelcomePage> {
     //TODO: implement initState
     super.initState();
     Future.delayed(const Duration(milliseconds: 5000),
-        () => {Navigator.pushNamed(context, 'signup')});
+        () => {Navigator.pushNamed(context, 'signin')});
   }
 
   void setLogin() async {
