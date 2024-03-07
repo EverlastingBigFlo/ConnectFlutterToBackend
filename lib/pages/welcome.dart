@@ -40,6 +40,7 @@ class _WelcomePageState extends State<WelcomePage> {
     }
   }
 
+
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color(0xFFF0F4F3),
