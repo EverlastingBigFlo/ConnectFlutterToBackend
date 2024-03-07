@@ -10,7 +10,7 @@ import 'package:form/components/animations/started.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+  const WelcomePage({super.key});
 
   @override
   State<WelcomePage> createState() => _WelcomePageState();
@@ -18,6 +18,13 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomePageState extends State<WelcomePage> {
   @override
+  void initState() {
+    //TODO: implement initState
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 5000),
+        () => {Navigator.pushNamed(context, 'signup')});
+  }
+
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color(0xFFF0F4F3),
