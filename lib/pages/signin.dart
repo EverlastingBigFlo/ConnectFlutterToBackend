@@ -53,22 +53,56 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(240, 244, 243, 1),
+      backgroundColor: const Color.fromRGBO(240, 244, 243, 1),
       body: Stack(
         children: [
-          Positioned(left: -80, top: 50, child: FirstCircle()),
-          Positioned(left: 50, bottom: 60, child: SecondCircle()),
-          Positioned(top: 65, left: 30, child: SignInWelcomeBack()),
-          Positioned(top: 120, left: 30, child: SigninEnterYour()),
+          const Positioned(left: -80, top: 50, child: FirstCircle()),
+          const Positioned(left: 50, bottom: 60, child: SecondCircle()),
+          const Positioned(top: 65, left: 30, child: SignInWelcomeBack()),
+          const Positioned(top: 120, left: 30, child: SigninEnterYour()),
           Positioned.fill(
             top: 200,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: SignInInput(
-                controllers: controller1,
+                controllers: controller1, focusnode: focusnode1
               ),
             ),
           ),
+          Positioned.fill(
+            top: 200,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: SignInInput(
+                controllers: controller2, focusnode: focusnode2
+              ),
+            ),
+          ),
+          Positioned.fill(
+            top: 200,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: SignInInput(
+                controllers: controller3, focusnode: focusnode3,
+              ),
+            ),
+          ),
+          Positioned.fill(
+            top: 200,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: SignInInput(
+                controllers: controller4, focusnode: focusnode4,
+              ),
+            ),
+          ),
+          // Positioned.fill(
+          //   top: 200,
+          //   child: Padding(
+          //     padding: const EdgeInsets.symmetric(horizontal: 10),
+          //     child: SignInInput(),
+          //   ),
+          // ),
           // Positioned(
           //   bottom: 20,
           //   left: 90,

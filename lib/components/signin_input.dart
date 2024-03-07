@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class SignInInput extends StatefulWidget {
   late TextEditingController? controllers;
-  SignInInput({super.key, this.controllers});
+  late FocusNode? focusnode;
+
+  SignInInput({
+    super.key,
+    this.controllers,
+    this.focusnode,
+  });
 
   @override
   State<SignInInput> createState() => _SignInInputState();
 }
 
 class _SignInInputState extends State<SignInInput> {
-
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
@@ -18,9 +24,13 @@ class _SignInInputState extends State<SignInInput> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            InputField(label: 'Username', ),
-            SizedBox(height: 40.0),
-            InputField(label: 'Password', isObscure: true),
+            // InputField(label: 'Username'),
+            // SizedBox(height: 40.0),
+            // InputField(label: 'Password', isObscure: true),
+            // SizedBox(height: 40.0),
+            InputField(
+              label: '',
+            ),
             SizedBox(height: 40.0),
           ],
         ),
