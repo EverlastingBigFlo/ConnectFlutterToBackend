@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:form/pages/signin-new.dart';
 import 'package:form/pages/signin.dart';
 import 'package:form/pages/signup.dart';
 import 'package:form/pages/welcome.dart';
